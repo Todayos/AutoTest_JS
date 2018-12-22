@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C-Test-1.0.1</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="help-tip">
+        <p>把提示文字写在这里</p>
+    </div>
+    <div id="top-div">
+        <div id="sign-left-div">
+            <!-- 小旋转立方体
+            <div id="box-div">
+                <div class="con">
+                    <div class="one">控制</div>
+                    <div class="two">质量</div>
+                    <div class="three">管理</div>
+                    <div class="four">控制</div>
+                    <div class="five">质量</div>
+                    <div class="six">管理</div>
+                </div>
+            </div> -->
+            <div id="sign-div">
+                Quality<br>Management<br>Controller
+                <!-- <b>Quality</b>
+            </br>
+                <b>Management</b>
+                <b>Controller</b> -->
+            </div>
+
+        </div>
+        <div id="title-top-div">
+            <!-- <h1 id='titlt-h1'></h1> -->
+            <a id='menu_ctrl' href="#">
+                <span>亖</span>
+            </a>
+            <div id="user-info">
+                <a href="#" id="user_btn" onclick="sub_menu('cancle_btn')">admin</a>
+                <a href="index.html" id="cancle_btn">注销</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-left-div">
+        <ul id="menu-left-ul">
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li onclick="sub_menu('menu-left-inner-ul1')" class="next-content">
+                <span>测试用例</span>
+                <ul class="menu-left-inner-ul" id="menu-left-inner-ul1">
+                    <li>
+                        <a href="#">
+                            功能用例
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            接口用例
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            UAT用例
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>压力测试</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>缺陷统计</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>自动化测试</span>
+                </a>
+            </li>
+            <li onclick="sub_menu('menu-left-inner-ul2')" class="next-content">
+                <span>系统设置</span>
+                <ul id="menu-left-inner-ul2" class="menu-left-inner-ul">
+                    <li>
+                        <a href="#">
+                            显示设置
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            数据设置
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>测试报告</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-left-a" href="#">
+                    <span>测试数据</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="class-back-div">
+        <div id="class-div">
+            <div class="class-div">
+                <div class="class-radius">
+                    <span>557</span>
+                </div>
+                <p>用例执行</p>
+            </div>
+            <div class="class-div">
+                <div class="class-radius">
+                    <span>1445</span>
+                </div>
+                <p>BUG数量</p>
+            </div>
+            <div class="class-div">
+                <div class="class-radius">
+                    <span>146</span>
+                </div>
+                <p>接口测试</p>
+            </div>
+            <div class="class-div">
+                <div class="class-radius">
+                    <span>12</span>
+                </div>
+                <p>风险统计</p>
+            </div>
+
+        </div>
+        <div id="content-div">
+            <ul id="p-div-ul">
+                <li>
+                    <p>Log4x-soapUI调用remote接口，是否能够在调用链中查看到完整的调用链信息-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>ISee-修改密码-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>ISee-查看业务调用链-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>USPA-修改菜单-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>USPA-添加租户-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>ISee-接口服务调用-详情-用例执行-失败</p>
+                </li>
+                <li>
+                    <p>Amber-执行SQL查询，返回正确的数据信息-测试用例-失败</p>
+                </li>
+                <li>
+                    <p>USPA-删除租户与用户绑定关系-用例执行-失败</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="class-right-div">
+        <div id="right-div-table">
+            <ul id="table-ul">
+                <li class="active">ISee</li>
+                <li>Log4x</li>
+                <li>Amber</li>
+            </ul>
+            <div id='right-div-table-title'>待处理：
+                <span id="spanHandle">567</span>
+            </div>
+            <div id='right-div-table-content1'>
+                <p>产品/项目</p>
+                <span id="itemSpan">ISee</span>
+            </div>
+            <div id='right-div-table-content2'>
+                <p>优先级</p>
+                <span id="leaveSpan">1</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom-div">
+        <div id="echarts-father-div">
+            <div id="echarts-div1">
+            </div>
+        </div>
+        <div id="bottom-right-div">
+            <div id="echarts-div2">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

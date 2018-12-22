@@ -1,0 +1,618 @@
+/* 设置全局margin padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* 设置背景颜色 */
+
+body {
+    background-color: #efefef;
+}
+
+/* 设置最顶端的底层div */
+
+#top-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: rgb(255, 255, 255)
+}
+
+/* 设置左上角的qmc图标和标签div */
+
+#sign-left-div {
+    position: fixed;
+    width: 229px;
+    height: 104px;
+    /* border:0 2px solid #151616; */
+    z-index: 999;
+    box-shadow: 0px 5px 2px 0 rgb(44, 44, 44);
+}
+
+/* 设置盒子所存在的div*/
+
+#box-div {
+    width: 50px;
+    height: 50px;
+    margin-top: 28px;
+    margin-left: 8px;
+}
+
+/* 设置标签中文字部分的div */
+
+#sign-div {
+    position: absolute;
+    top: 0px;
+    left: 26px;
+    width: 165px;
+    height: 104px;
+    font-family: Arial, Verdana, Sans-serif;
+    font-size: 17px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    padding-top: 24px;
+    z-index: 111;
+}
+
+/* #sign-div b {
+    font-weight: 400;
+} */
+
+/* 垂直居中 */
+
+/* 
+float: left;
+text-align: center;  
+line-height: 104px; 
+*/
+
+/* 设置正上方标题块的div */
+
+#title-top-div {
+    position: fixed;
+    float: right;
+    top: 0;
+    left: 230px;
+    width: 100%;
+    height: 64px;
+    /* background-color: #2f353f; */
+    background-color: #fff;
+    z-index: 666;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1)
+}
+
+/* 设置左侧菜单div */
+
+#menu_ctrl {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    top: 25px;
+    margin-left: 10px;
+    border-radius: 20%;
+    /* background-color: #d1d2d3; */
+}
+
+#menu_ctrl span {
+    margin-top: 14px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    line-height: 0px;
+    color: #2f353f;
+    font-weight: bolder;
+}
+
+#user-info {
+    position: relative;
+    margin-left: 980px;
+    top: 20px;
+    width: 130px;
+    height: 40px;
+    /* background-color: #efefef; */
+    float: left;
+    font-size: 14px;
+}
+
+#user_btn {
+    width: 100px;
+    margin: 0 auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    color: #444;
+}
+
+#cancle_btn {
+    position: relative;
+    top: -10px;
+    left: 40px;
+    color: #444;
+    width: 70px;
+    border: 1px solid #2f353f;
+    background-color: #fff;
+    margin: 0 auto;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+
+#cancle_btn:hover {
+    color: #242931;
+    background-color: #efefef;
+    text-decoration: underline;
+}
+
+#user_btn::before {
+    border-radius: 50%;
+    background-color: #efefef;
+    content: "";
+    margin: 5px 10px;
+    float: left;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/person.jpg");
+    background-size: 100% 100%;
+}
+
+#user_btn::after {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 1px;
+    float: right;
+    content: "◣";
+    /* margin: 5px 10px; */
+}
+
+#user_btn:hover {
+    color: #242931;
+    text-decoration: underline;
+}
+
+#menu-left-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 115%;
+    background-color: #2f353f;
+    z-index: 777;
+    text-indent: 2em;
+}
+
+/* 设置菜单span属性 在这可以调节文字颜色尺寸 */
+
+.menu-left-a span {
+    font-size: 16px;
+    line-height: 40px;
+    color: #999;
+    cursor: pointer;
+    text-indent: 2em;
+}
+
+/* 设置伪元素 加前面的图标 */
+
+.menu-left-a span::before {
+    content: "\E053";
+    margin-right: 15px;
+}
+
+/* 设置下拉菜单的宽度 */
+
+#system-setting-span {
+    width: 229px;
+}
+
+#system-setting-span:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* 设置下拉菜单的下伪元素 加后面的图标 */
+
+.next-content span::after {
+    content: "∨";
+    margin-left: 60px;
+}
+
+/* .next-content span.special:after {
+    content: "修改一下";
+} */
+
+.next-content::before {
+    content: "\E053";
+    margin-right: 10px;
+}
+
+.next-content {
+    font-size: 16px;
+    line-height: 40px;
+    color: #999;
+    cursor: pointer;
+    text-indent: 2em;
+}
+
+.next-content span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-left-a span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-left-inner-ul li a span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-left-inner-ul {
+    width: 229px;
+    line-height: 40px;
+    text-indent: 5em;
+    background-color: #242931
+}
+
+#menu-left-inner-ul1,
+#menu-left-inner-ul2 {
+    display: none;
+}
+
+.menu-left-inner-ul a {
+    color: #999
+}
+
+/* 设置菜单的ul */
+
+#menu-left-ul {
+    position: absolute;
+    width: 230px;
+    top: 135px;
+}
+
+#menu-left-ul li {
+    width: 230px;
+}
+
+#menu-left-ul li:hover {
+    cursor: pointer;
+}
+
+#menu-left-ul li a:hover {
+    color: #fff;
+}
+
+/* #display-setting li a span {
+    text-indent: 4em;
+    display: none;
+    color: #999;
+} */
+
+#class-back-div {
+    position: absolute;
+    top: 70px;
+    left: 242px;
+    margin: 0px;
+    width: 1107px;
+    height: 300px;
+    background-color: #efefef;
+}
+
+#class-div {
+    position: relative;
+    width: 740px;
+    height: 90px;
+    background-color: #efefef;
+}
+
+.class-div {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+}
+
+.class-div p {
+    text-indent: 0.5em;
+    font-size: 14px;
+    width: 155px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    ;
+}
+
+.class-radius span {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.class-radius {
+    margin-left: 55px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1890ff;
+    color: rgb(85, 85, 85);
+}
+
+.class-radius:hover {
+    background-color: rgb(128, 126, 126);
+    color: #18dcff;
+}
+
+#class-right-div {
+    position: relative;
+    top: 54px;
+    left: 981px;
+    width: 367px;
+    height: 299px;
+    background-color: #fff;
+}
+
+#right-div-table {
+    position: relative;
+    background-color: #2468a7;
+    width: 367px;
+    height: 48px;
+    border-bottom: 1px solid #8a8a8a;
+}
+
+#table-ul {
+    border-bottom: #2f353f;
+    line-height: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#table-ul li {
+    width: 122.3px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    /* border-radius: 30%; */
+}
+
+/* 加三角形指向图标 */
+
+/* #table-ul li ::before{
+
+} */
+
+#table-ul li:hover {
+    cursor: pointer;
+}
+
+#table-ul li a {
+    color: #fff;
+}
+
+.active{
+    background-color: #999;
+}
+
+#right-div-table-title {
+    position: absolute;
+    height: 30px;
+    width: 340px;
+    font-size: 14px;
+    top: 60px;
+    left: 10px;
+    border-bottom: 1px solid #2f353f;
+}
+
+#right-div-table-content1 {
+    position: absolute;
+    border-right: 1px solid #2f353f;
+    padding-right: 12px;
+    top: 130px;
+    left: 50px;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+}
+
+#right-div-table-content2 {
+    position: absolute;
+    top: 130px;
+    left: 220px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+#right-div-table-content1 span {
+    position: relative;
+    top: 25px;
+    text-indent: 1em;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+
+#right-div-table-content2 span {
+    position: relative;
+    top: 25px;
+    text-indent: 1em;
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+}
+
+#content-div {
+    position: relative;
+    width: 730px;
+    height: 215px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#p-div-ul {
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#p-div-ul li p {
+    width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#p-div-ul li p:hover {
+    color: #1890ff;
+    font-weight: bold;
+}
+
+/* #p-div-ul li p::after {
+    content: ">";
+    margin-right: 10px;
+    float: right;
+}  */
+
+#echarts-father-div {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    background-color: #fff
+}
+
+#echarts-div1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+#echarts-div2 {
+    position: relative;
+    margin-top: 10px;
+    width: 800px;
+    height: 300px;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+#titlt-h1 {
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 5px;
+    width: 100%;
+    padding-top: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff
+}
+
+ul {
+    list-style: none;
+}
+
+#bottom-div {
+    position: absolute;
+    top: 383px;
+    left: 242px;
+    width: 1107px;
+    height: 323px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+#bottom-right-div {
+    position: relative;
+    top: -330px;
+    left: 307px;
+    width: 798px;
+    height: 323px;
+    background-color: #fff;
+}
+
+/* 旋转立方体 */
+
+@keyframes box {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+        /* transform: rotateY(0deg); */
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+        /* transform: rotateY(360deg); */
+    }
+}
+
+.con {
+    width: 55px;
+    height: 55px;
+    margin-left: 17px;
+    margin-top: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: box 10s infinite;
+    animation-iteration-count: infinite;
+    /* normal|alternate; */
+    animation-direction: alternate;
+}
+
+.con div {
+    width: 55px;
+    height: 55px;
+    border-radius: 20%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 20px;
+    line-height: 55px;
+    text-align: center;
+    color: rgb(245, 238, 238);
+}
+
+.one {
+    background-color: rgba(33, 121, 252, 0.7);
+    transform: rotateX(90deg) translateZ(27.5px);
+}
+
+.two {
+    background-color: rgb(252, 164, 33, 0.7);
+    transform: rotateX(-90deg) translateZ(27.5px);
+}
+
+.three {
+    background-color: rgb(255, 0, 0, 0.7);
+    transform: rotateY(90deg) translateZ(27.5px);
+}
+
+.four {
+    background-color: rgb(159, 253, 7, 0.7);
+    transform: rotateY(-90deg) translateZ(27.5px);
+}
+
+.five {
+    background-color: rgb(10, 230, 157, 0.7);
+    transform: rotateZ(360deg) translateZ(27.5px);
+    ;
+}
+
+.six {
+    transform: translateZ(-29px);
+}
