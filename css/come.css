@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    background-color: #444;
+    color: #ec0f0f;
+    width: 100%;
+    height: 100vh
+}
+
+.p0 {
+    position: relative;
+    float: left;
+    font-size: 28px;
+    width: 40%;
+    height: 100%;
+    text-align: right;
+}
+
+.p1 {
+    position: relative;
+    float: right;
+    font-size: 28px;
+    width: 58%;
+    height: 100%;
+    text-align: left;
+}
+
+.p2 {
+    position: relative;
+    font-size: 38px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+}
+
+#img1 {
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
